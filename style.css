@@ -124,22 +124,44 @@ margin-bottom: 20px;
 }
 
 .tela1 {
-    width: 300px;
-    height: 300px;
-    text-align: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  border-radius:8px;
+  overflow: hidden;
+  margin: 15px;
+  border: 2px solid #fff;
+}
+img{
+  width: 100%;
+  transition: all linear 0.7s;
+}
+
+img.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 
 }
-.tela1-info{
-display: flex;
-text-align:center;
-justify-content:center;
-color: black;
-font-family:monospace;
-}
+
+.tela1-info{  
+  width: 100px;   
+  height: 30px;   
+  background-color: brown;   
+  animation-name: Transición ;   
+  animation-duration: 6s;  
+} 
+@keyframes Transición {  
+   from {background-color: black;} 
+     to {background-color: brown;} 
+    }
 
 .botonCompra{
     text-align: center;
     font-family:monospace;
+    transition: background ease-in .3s;
     border-radius:5px;
     width:100px;
     text-decoration:none;
@@ -171,11 +193,4 @@ font-family:monospace;
 
 /* mejores del team flex display: flex, height 200px, justify content space-between, align items: flex-end*/ 
 
-/* ejemplos de clase */ 
-
-.bodyGrid{
-display: grid;
-grid-template-areas: ;
-"header"
-
-}
+/* ejemplos de clase */
