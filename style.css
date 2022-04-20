@@ -195,8 +195,7 @@ img.hover-img {
 
 /* ejemplos de clase */
 .carousel-inner{
-  max-width: 40rem;
-  height: 20000px;
-  width: 20000px;
+  max-width: 60rem;
+
 
 }
