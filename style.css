@@ -194,3 +194,9 @@ img.hover-img {
 /* mejores del team flex display: flex, height 200px, justify content space-between, align items: flex-end*/ 
 
 /* ejemplos de clase */
+.carousel-inner{
+  max-width: 40rem;
+  height: 20000px;
+  width: 20000px;
+
+}
