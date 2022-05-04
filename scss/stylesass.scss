@@ -1,0 +1,212 @@
+h1 {
+    color: red; }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+}  
+
+body {
+    background: 
+      radial-gradient(black 3px, transparent 4px),
+      radial-gradient(black 3px, transparent 4px),
+      linear-gradient(#fff 4px, transparent 0),
+      linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+      linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  .body11 {
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-color: white;
+    box-shadow: 0 0 30px black;
+  }
+
+  .bodyh111 {
+    color: white;
+    background-color: black;
+    text-align: center;
+    
+  }
+
+
+  .resplandor{
+    padding-top: 20px;
+    color: #f0f0f0;
+    text-shadow: 0 0 30px #fff;
+    text-align: center;
+
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+
+
+  
+  li {
+    display: inline-block;
+  }
+    
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+    
+  li a:hover {
+    background-color: brown ;
+}
+.title h1 {
+    padding: 30px 0 ;
+    text-align: center;
+    font-size: 2.8em;
+    text-transform: uppercase;
+
+  }
+
+  .container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(4,1fr)
+  }
+
+  .container>.header, .container>.content, .container>.sidebar, .container>.footer, .container>div {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+.container>.header, .container>.footer {
+    grid-column: 1/6;
+    background-color: black;
+    color:white;
+}
+
+.container>.content {
+    grid-column: span 6;
+    grid-row: span 6;
+}
+
+
+.content>.article {
+    background: brown;
+    padding: 20px;
+    margin-top: 5px;
+    color: white;
+    padding: 10px;
+}
+
+
+.container>.sidebar {
+    grid-column: span 6;
+    grid-row: span 6;
+    background:brown;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.box1{
+    text-align: center;
+    padding: 20px 20px;
+    box-shadow: 0 0 20px white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+
+    .tela1 {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        border-radius:8px;
+        overflow: hidden;
+        margin: 15px;
+        border: 2px solid #fff;
+      }
+
+
+img{
+    width: 100%;
+    transition: all linear 0.7s;
+  }
+
+
+img.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  
+  }
+
+  .tela1-info{  
+    width: 100px;   
+    height: 30px;   
+    background-color: brown;   
+    animation-name: Transición ;   
+    animation-duration: 6s;  
+  } 
+
+  @keyframes Transición {  
+    from {background-color: black;} 
+      to {background-color: brown;} 
+     }
+
+     .botonCompra{
+        text-align: center;
+        font-family:monospace;
+        transition: background ease-in .3s;
+        border-radius:5px;
+        width:100px;
+        text-decoration:none;
+        margin-bottom:10px;
+        box-shadow: 0 0 10px white;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+        .header {
+            text-align: center;
+        }
+        .container .content {
+            grid-column: 1 / -1;
+        }
+        .container .sidebar {
+            grid-column: 1 / 6;
+        }
+    
+        .container .footer {
+            grid-column: 1/-1;
+        }
+    
+        .container .box1 {
+          grid-column: 1/-1;
+      }
+    
+    }
+
+    .carousel-inner{
+        max-width: 60rem;
+      
+      
+      }
