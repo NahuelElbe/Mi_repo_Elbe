@@ -1,4 +1,8 @@
 @charset "UTF-8";
+h2 {
+  color: gray;
+  padding: 0%; }
+
 h1 {
   color: brown; }
 
@@ -159,3 +163,15 @@ img.hover-img {
 
 .carousel-inner {
   max-width: 60rem; }
+
+.contenedor {
+  width: 500px;
+  height: 50px;
+  color: red;
+  margin: 50px; }
+
+.boton {
+  width: 80px;
+  height: 30px;
+  color: brown;
+  margin: 60px; }
