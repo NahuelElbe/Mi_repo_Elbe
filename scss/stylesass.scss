@@ -237,3 +237,286 @@ img.hover-img {
         
         }
         
+
+        .resplandor{
+          padding-top: 20px;
+          color: #f0f0f0;
+          text-shadow: 0 0 30px #fff;
+          text-align: center;
+        }
+
+        // dc
+
+        /*Variable*/
+
+$tamaño-margin-top: 20px;
+$texto-claro: rgb(245, 222, 179);
+
+/*Mapa*/
+
+$estilos: (
+  centrado: center,
+  direccion: row,
+);
+
+/*Mixin*/
+
+@mixin size ($heigth){
+  height: $heigth;
+}
+
+@media (min-width: 501px){
+
+    .imagen-fondo {
+        background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(79, 83, 77));
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+    .nombre {
+        font-size: 10px;
+        color: #FFF;
+        text-align: center;
+        font: italic bold 61px Georgia, Serif;
+        text-shadow: -4px 3px 0 #34d16e, -14px 7px 0 #0a0e27;
+        display: flex;
+        justify-content: space-between;
+        align-items: map-get($estilos, centrado);
+      }
+
+    .posision {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 90px;
+        margin-bottom: -214px;
+        flex-wrap: nowrap;
+        align-items: map-get($estilos, centrado);
+      }
+
+    h2 {
+        text-align: map-get($estilos, centrado);
+        font-family: monospace;
+      }
+
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: map-get($estilos, direccion);
+        justify-content: center;
+      }
+
+    .img1:hover {
+        transform: scale(1.5);
+      }
+
+    .lugar {
+        justify-content: center;
+        margin-top: $tamaño-margin-top;
+        margin-right: -26px;
+        margin-bottom: 30px;
+      }
+
+    .tamaño {
+        @include size(500px);
+      }
+
+    .envio {
+        width: 200px;
+        margin-top: 30px;
+        height: 260px;
+        background-color: #ffffff;
+        box-shadow: 15px 15px 30px #191919,
+                     -15px -15px 30px #292929;
+        transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                     transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+      }
+       
+    .envio:hover {
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        transform: scale(1.05);
+      }
+
+    .formasEnvios {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .infoEnvios {
+      color: black;
+      text-align: center;
+      margin-top: 30px;
+      font-family: monospace;
+      font-size: 15px;
+    }
+
+    .imagenEnvios {
+      width: 120px; 
+      margin-left: 40px; 
+      margin-top: 40px;
+    }
+
+    .textClaro {
+      color: $texto-claro;
+    }
+
+    .logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    }
+
+    .mapas {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .ubicacion {
+      width: 25rem;
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .prueba {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        flex-direction: column;
+      }
+    
+    .imagen-fondo {
+        background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(79, 83, 77));
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+    .nombre {
+        font-size: 10px;
+        color: #FFF;
+        text-align: center;
+        font: italic bold 40px Georgia, Serif;
+        text-shadow: -4px 3px 0 #34d16e, -14px 7px 0 #0a0e27;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+    .posision {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 90px;
+        margin-bottom: -214px;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+      
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+      }
+      
+    .img1:hover {
+        transform: scale(1.5);
+      }
+
+    .lugar {
+        justify-content: center;
+        margin-top: $tamaño-margin-top;
+        margin-right: -26px;
+        margin-bottom: 30px;
+      }
+      
+    .tamaño {
+      @include size(300px);
+      }
+    
+    h2 {
+        text-align: center;
+        font-family: monospace;
+      }
+
+    .envio {
+        width: 200px;
+        margin-top: 30px;
+        height: 260px;
+        background-color: #ffffff;
+        box-shadow: 15px 15px 30px #191919,
+                     -15px -15px 30px #292929;
+        transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                     transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+      }
+       
+  .envio:hover {
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        transform: scale(1.05);
+      }
+
+  .formasEnvios {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+  .infoEnvios {
+      color: black;
+      text-align: center;
+      margin-top: 30px;
+      font-family: monospace;
+      font-size: 15px;
+    }
+
+  .imagenEnvios {
+      width: 120px; 
+      margin-left: 40px; 
+      margin-top: 40px;
+    }
+    
+  .textClaro {
+      color: $texto-claro;
+    }
+
+  .logo {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: space-around;
+      justify-content: space-around;
+    }
+
+  .mapas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .ubicacion {
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .logoTamaño {
+    width: 100px;
+  }
+}
