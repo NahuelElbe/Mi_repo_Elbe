@@ -14,7 +14,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
-        <title>IMAGENES</title>
+        <title>CONTACTO</title>
     </head>
 
 <body>
@@ -44,8 +44,7 @@
                             <li class="nav-item">
                                 <a href="envios.html">ENVIOS</a>
                                 <li class="nav-item">
-                                    <a href="contacto.html">CONTACTO</a>
-
+                                        <a href="contacto.html">CONTACTO</a>
     
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             </ul>
@@ -57,37 +56,63 @@
                       </div>
                     </div>
                   </nav>      
-                </section>
-                
-                <section>
 
-                    <div class="container">
-                        <header class="header">
-                            <h1>NOSOTROS</h1>
-                        </header>
-                        <main class="content">
-                            <article class="article">
-                                <h1>Quienes somos? </h1>
-                                <p>
-                                    Somos 6 jovenes emprendedores de familias porteñas con ganas de hacer una pyme que lleve telas a todo el pais!
-                            </article>
-                            <img class="tamanoFoto" src="../img/NOSOTROS.png" alt="Nuestra empresa" title="Nuestra empresa es familiar, de raices Argentinas">
-    
-                        </main>
-                        <main class="content">
-                            <article class="article">
-                                <h1>Un poco de nuestra empresa</h1>
-                                <p>
-                                  Somos de buenos aires pero hacemos envios a todo el pais, hace click y mira nuestro video de produccion
-                                </p>
-                            </article>
-                            <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/rVWoiEnLFU8" title="YouTube video player"
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-    
-                        </main>
-                
+                  <div style="margin-left: 90px; margin-right: 90px;">
+
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Nombre</label>
+                        </div>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Apellido</label>
+                        </div>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="row g-3">
+                          <div class="col-md-3">
+                            <div class="form-floating mb-3 ">
+                              <input type="name" class="form-control" id="floatingInput" placeholder="+54....">
+                              <label for="floatingInput">Codigo de area</label>
                             </div>
+                          </div>
+                          <div class="col-md">
+                            <div class="form-floating mb-3" >
+                              <input type="name" class="form-control" id="floatingInput" placeholder="+54....">
+                              <label for="floatingInput">Numero de telefono</label>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <select class="form-select mb-3 mt-1" aria-label="Default select example">
+                          <option selected>Consulta o queja</option>
+                          <option value="1">Precios</option>
+                          <option value="2">Metros</option>
+                          <option value="3">Cambios</option>
+                          <option value="4">Garantia</option>
+                          <option value="3">Demoras</option>
+                          <option value="3">Devoluciones</option>
+                        </select>
+                
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 250px"></textarea>
+                          <label for="floatingTextarea">Comentarios</label>
+                        </div>
+                
+                        <div style="margin-top: 13px;">
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="formSwitchCheckChecked" checked="">
+                            <label class="form-check-label" for="formSwitchCheckChecked" style="color: wheat; font-size: 15px;">Recibir novedades de la pagina al mail</label>
+                          </div>
+                        </div>
+                
+                        <div class="d-grid gap-2 mt-3">
+                          <button class="btn btn-primary" type="button">Enviar</button>
+                        </div>
+                    </div>
+                
                 
                     
                                         
