@@ -149,7 +149,7 @@ img.hover-img {
   margin-bottom: 10px;
   box-shadow: 0 0 10px white; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 509px) {
   .header {
     text-align: center; }
   .container .content {
@@ -158,6 +158,10 @@ img.hover-img {
     grid-column: 1 / 6; }
   .container .footer {
     grid-column: 1/-1; }
+  .videoyt {
+    width: 420px;
+    height: 315px;
+    margin-top: 15px; }
   .container .box1 {
     grid-column: 1/-1; } }
 
@@ -243,3 +247,8 @@ img.hover-img {
   margin-top: 30px;
   font-family: monospace;
   font-size: 15px; }
+
+.videoyt {
+  width: 560px;
+  height: 315px;
+  margin-top: 15px; }
